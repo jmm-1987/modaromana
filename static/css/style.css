@@ -69,12 +69,31 @@ h3,
     position: relative;
     min-height: 92vh;
     color: var(--color-blanco);
-    background:
-        linear-gradient(120deg, rgba(18, 16, 14, 0.72), rgba(90, 31, 31, 0.32)),
-        url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
+    background: #1c1a18;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(120deg, rgba(18, 16, 14, 0.72), rgba(90, 31, 31, 0.32));
+    pointer-events: none;
+}
+
+.hero-overlay::after {
+    content: "";
     position: absolute;
     inset: 0;
     background-image: radial-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px);
