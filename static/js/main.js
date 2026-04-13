@@ -58,3 +58,35 @@ document.addEventListener("keydown", (event) => {
         document.querySelectorAll(".modal-overlay.open").forEach((modal) => closeModal(modal));
     }
 });
+
+const cookieBanner = document.getElementById("cookie-banner");
+const cookieAccept = document.getElementById("cookie-accept");
+const cookieReject = document.getElementById("cookie-reject");
+const cookieStorageKey = "weark_cookie_consent";
+
+function hideCookieBanner() {
+    if (cookieBanner) {
+        cookieBanner.classList.add("hidden");
+    }
+}
+
+if (cookieBanner) {
+    const storedCookieChoice = localStorage.getItem(cookieStorageKey);
+    if (storedCookieChoice === "accepted" || storedCookieChoice === "rejected") {
+        hideCookieBanner();
+    }
+}
+
+if (cookieAccept) {
+    cookieAccept.addEventListener("click", () => {
+        localStorage.setItem(cookieStorageKey, "accepted");
+        hideCookieBanner();
+    });
+}
+
+if (cookieReject) {
+    cookieReject.addEventListener("click", () => {
+        localStorage.setItem(cookieStorageKey, "rejected");
+        hideCookieBanner();
+    });
+}
