@@ -243,6 +243,18 @@ h3,
     padding-top: 0.8rem;
 }
 
+/* Buy Button dentro de la tarjeta: ancho completo, sin columnas de vitrina que desplazan la imagen (la foto va en .product-card > img). */
+.product-card .shopify-button-placeholder .shopify-buy__product {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.product-card .shopify-button-placeholder .shopify-buy__btn {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .handmade {
     background: linear-gradient(120deg, #e8d8c0, #efe4d2 55%, #f6eee2);
 }

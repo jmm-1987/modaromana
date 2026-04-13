@@ -44,22 +44,22 @@
                 <p class="section-label">Coleccion destacada</p>
                 <h2>Articulos disponibles</h2>
                 <p>
-                    Estos 10 articulos son placeholders visuales para definir estilo y estructura.
-                    Cuando exista la tienda, cada tarjeta recibira su Buy Button de Shopify.
+                    Estos articulos combinan ficha manual (imagen arriba, titulo y precio) con el Buy Button de Shopify abajo.
+                    La foto real va en la misma posicion que los placeholders de Unsplash; el embed oculta su imagen para no duplicarla.
                 </p>
             </div>
 
             <div class="product-grid">
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=80" alt="Tunica Augusta" loading="lazy">
+                <article class="product-card" data-shopify-product-id="15895542497667">
+                    <!-- Imagen destacada: misma posicion que Unsplash; embed con contents.img false. -->
+                    <img src="https://cdn.shopify.com/s/files/1/1008/5397/3379/files/Tovarcomp-91_900x.jpg?v=1776093054" alt="TRAJE AGRIPA" loading="lazy" width="900" height="675" decoding="async">
                     <div class="product-info">
-                        <span class="section-label">Placeholder</span>
-                        <h3>Tunica Augusta</h3>
-                        <p>Tunica de lino inspirada en cortes clasicos emeritenses.</p>
-                        <span class="product-price">Desde 79 EUR</span>
+                        <span class="section-label">En tienda</span>
+                        <h3>TRAJE AGRIPA</h3>
+                        <p>STE TRAJE MOLA MOGOLLON Y LOS COMPRAS SIN PENSAR</p>
+                        <span class="product-price">Desde 25 EUR</span>
                         <div class="shopify-button-placeholder" id="shopify-product-1">
-                            <!-- Aqui se insertara el codigo embebido de Shopify Buy Button para este producto -->
-                            <div id="product-component-1776074873689"></div>
+                            <div id="product-component-1776094237287"></div>
                         </div>
                     </div>
                 </article>
@@ -434,35 +434,40 @@
   }
   function ShopifyBuyInit() {
     var client = ShopifyBuy.buildClient({
-      domain: "n10h0k-3j.myshopify.com",
-      storefrontAccessToken: "c3420c3a6ac2873b13f02251f29a92dc",
+      domain: "gtq3mq-vb.myshopify.com",
+      storefrontAccessToken: "32702bb775fb3dd5990b9d63f48bd578",
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent("product", {
-        id: "15660235260235",
-        node: document.getElementById("product-component-1776074873689"),
+        id: "15895542497667",
+        node: document.getElementById("product-component-1776094237287"),
         moneyFormat: "%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D",
         options: {
           "product": {
+            "contents": {
+              "img": false,
+              "title": false,
+              "price": false,
+              "description": false
+            },
             "styles": {
               "product": {
-                "@media (min-width: 601px)": {
-                  "max-width": "calc(25% - 20px)",
-                  "margin-left": "20px",
-                  "margin-bottom": "50px"
-                }
+                "max-width": "100%",
+                "margin-left": "0",
+                "margin-bottom": "0"
+              },
+              "button": {
+                "width": "100%"
               }
             },
             "text": {
-              "button": "Add to cart"
+              "button": "Añadir al carrito"
             }
           },
           "productSet": {
             "styles": {
               "products": {
-                "@media (min-width: 601px)": {
-                  "margin-left": "-20px"
-                }
+                "margin-left": "0"
               }
             }
           },
@@ -475,15 +480,13 @@
             },
             "styles": {
               "product": {
-                "@media (min-width: 601px)": {
-                  "max-width": "100%",
-                  "margin-left": "0px",
-                  "margin-bottom": "0px"
-                }
+                "max-width": "100%",
+                "margin-left": "0px",
+                "margin-bottom": "0px"
               }
             },
             "text": {
-              "button": "Add to cart"
+              "button": "Añadir al carrito"
             }
           },
           "option": {},
