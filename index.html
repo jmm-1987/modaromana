@@ -64,16 +64,15 @@
                     </div>
                 </article>
 
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1463107971871-fbac9ddb920f?auto=format&fit=crop&w=900&q=80" alt="Estola Patriciae" loading="lazy">
+                <article class="product-card" data-shopify-product-id="15895542497667">
+                    <img src="https://cdn.shopify.com/s/files/1/1008/5397/3379/files/Tovarcomp-91_900x.jpg?v=1776093054" alt="TRAJE AGRIPA" loading="lazy" width="900" height="675" decoding="async">
                     <div class="product-info">
-                        <span class="section-label">Placeholder</span>
-                        <h3>Estola Patriciae</h3>
-                        <p>Prenda ceremonial con caida elegante y acabados artesanos.</p>
-                        <span class="product-price">Desde 95 EUR</span>
+                        <span class="section-label">En tienda</span>
+                        <h3>TRAJE AGRIPA</h3>
+                        <p>STE TRAJE MOLA MOGOLLON Y LOS COMPRAS SIN PENSAR</p>
+                        <span class="product-price">Desde 25 EUR</span>
                         <div class="shopify-button-placeholder" id="shopify-product-2">
-                            <!-- Aqui se insertara el codigo embebido de Shopify Buy Button para este producto -->
-                            <button type="button" class="btn btn-secondary" disabled>Boton de compra proximamente</button>
+                            <div id="product-component-1776094550585"></div>
                         </div>
                     </div>
                 </article>
@@ -438,66 +437,114 @@
       storefrontAccessToken: "32702bb775fb3dd5990b9d63f48bd578",
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
+      var moneyFormat = "%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D";
+      var sharedModalAndCart = {
+        modalProduct: {
+          contents: {
+            img: false,
+            imgWithCarousel: true,
+            button: false,
+            buttonWithQuantity: true
+          },
+          styles: {
+            product: {
+              "max-width": "100%",
+              "margin-left": "0px",
+              "margin-bottom": "0px"
+            }
+          },
+          text: {
+            button: "Añadir al carrito"
+          }
+        },
+        option: {},
+        cart: {
+          text: {
+            total: "Subtotal",
+            button: "Checkout"
+          }
+        },
+        toggle: {}
+      };
+
       ui.createComponent("product", {
         id: "15895542497667",
         node: document.getElementById("product-component-1776094237287"),
-        moneyFormat: "%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D",
-        options: {
-          "product": {
-            "contents": {
-              "img": false,
-              "title": false,
-              "price": false,
-              "description": false
-            },
-            "styles": {
-              "product": {
-                "max-width": "100%",
-                "margin-left": "0",
-                "margin-bottom": "0"
+        moneyFormat: moneyFormat,
+        options: Object.assign(
+          {
+            product: {
+              contents: {
+                img: false,
+                title: false,
+                price: false,
+                description: false
               },
-              "button": {
-                "width": "100%"
+              styles: {
+                product: {
+                  "max-width": "100%",
+                  "margin-left": "0",
+                  "margin-bottom": "0"
+                },
+                button: {
+                  width: "100%"
+                }
+              },
+              text: {
+                button: "Añadir al carrito"
               }
             },
-            "text": {
-              "button": "Añadir al carrito"
-            }
-          },
-          "productSet": {
-            "styles": {
-              "products": {
-                "margin-left": "0"
+            productSet: {
+              styles: {
+                products: {
+                  "margin-left": "0"
+                }
               }
             }
           },
-          "modalProduct": {
-            "contents": {
-              "img": false,
-              "imgWithCarousel": true,
-              "button": false,
-              "buttonWithQuantity": true
-            },
-            "styles": {
-              "product": {
-                "max-width": "100%",
-                "margin-left": "0px",
-                "margin-bottom": "0px"
+          sharedModalAndCart
+        )
+      });
+
+      ui.createComponent("product", {
+        id: "15895542497667",
+        node: document.getElementById("product-component-1776094550585"),
+        moneyFormat: moneyFormat,
+        options: Object.assign(
+          {
+            product: {
+              buttonDestination: "modal",
+              contents: {
+                img: false,
+                title: false,
+                price: false,
+                description: false,
+                options: false
+              },
+              styles: {
+                product: {
+                  "max-width": "100%",
+                  "margin-left": "0",
+                  "margin-bottom": "0"
+                },
+                button: {
+                  width: "100%"
+                }
+              },
+              text: {
+                button: "Ver producto"
               }
             },
-            "text": {
-              "button": "Añadir al carrito"
+            productSet: {
+              styles: {
+                products: {
+                  "margin-left": "0"
+                }
+              }
             }
           },
-          "option": {},
-          "cart": {
-            "text": {
-              "total": "Subtotal",
-              "button": "Checkout"
-            }
-          },
-          "toggle": {}
-        }
+          sharedModalAndCart
+        )
       });
     });
   }
