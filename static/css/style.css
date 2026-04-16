@@ -331,6 +331,21 @@ h3,
     max-width: 100% !important;
 }
 
+/* El Buy Button suele renderizar en iframe: forzar ancho completo del contenedor. */
+.product-card .shopify-buy-frame,
+.product-card .shopify-buy-frame iframe,
+.product-card .shopify-button-placeholder > iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block;
+}
+
+/* Zoom ligero solo en la primera tarjeta. */
+#product-component-1776346772786 .shopify-buy__product-img-wrapper img {
+    transform: scale(1.08);
+    transform-origin: center center;
+}
+
 .handmade {
     background: linear-gradient(120deg, #e8d8c0, #efe4d2 55%, #f6eee2);
 }
