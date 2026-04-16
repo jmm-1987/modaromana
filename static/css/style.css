@@ -9,6 +9,7 @@
     --color-blanco: #ffffff;
     --shadow-soft: 0 10px 35px rgba(44, 42, 39, 0.12);
     --product-image-height: 240px;
+    --navbar-height: 78px;
 }
 
 * {
@@ -72,6 +73,7 @@ h3,
     color: var(--color-blanco);
     background: #1c1a18;
     overflow: hidden;
+    padding-top: var(--navbar-height);
 }
 
 .hero-video {
@@ -104,19 +106,29 @@ h3,
 }
 
 .navbar {
-    position: relative;
-    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+    background: rgba(248, 244, 236, 0.92);
+    border-bottom: 1px solid rgba(44, 42, 39, 0.10);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: min(1120px, 92vw);
     margin: 0 auto;
-    padding: 1.2rem 0;
+    height: var(--navbar-height);
 }
 
 .logo {
     text-decoration: none;
-    color: var(--color-crema);
+    color: var(--color-pizarra);
     font-size: 1.35rem;
     letter-spacing: 0.08em;
     display: inline-flex;
@@ -139,7 +151,7 @@ h3,
 }
 
 .nav-links a {
-    color: var(--color-crema);
+    color: var(--color-pizarra);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.25s ease;
@@ -151,9 +163,9 @@ h3,
 
 .menu-toggle {
     display: none;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(44, 42, 39, 0.25);
     background: transparent;
-    color: var(--color-blanco);
+    color: var(--color-pizarra);
     border-radius: 6px;
     padding: 0.45rem 0.7rem;
 }
@@ -490,29 +502,34 @@ h3,
 
 @media (max-width: 780px) {
     .menu-toggle {
-        display: inline-block;
+        display: none;
     }
 
     .nav-links {
-        position: absolute;
-        top: 64px;
-        right: 0;
-        background: rgba(23, 20, 18, 0.92);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 10px;
-        padding: 0.9rem;
-        flex-direction: column;
-        min-width: 200px;
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(-8px);
-        transition: opacity 0.2s ease, transform 0.2s ease;
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.8rem;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        min-width: 0;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        transition: none;
     }
 
     .nav-links.open {
         opacity: 1;
         pointer-events: auto;
-        transform: translateY(0);
+        transform: none;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
     }
 
     .hero-content {
