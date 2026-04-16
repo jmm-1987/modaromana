@@ -17,7 +17,9 @@
     </video>
     <div class="hero-overlay"></div>
     <nav class="navbar">
-        <a href="#inicio" class="logo">WEARK</a>
+        <a href="#inicio" class="logo" aria-label="WEARK">
+            <img src="static/logo_base.png" alt="WEARK" class="logo-img" width="180" height="48" decoding="async">
+        </a>
         <button class="menu-toggle" aria-label="Abrir menu">Menu</button>
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
@@ -47,148 +49,304 @@
                 <p class="section-label">Coleccion destacada</p>
                 <h2>Articulos disponibles</h2>
                 <p>
-                    Estos articulos combinan ficha manual (imagen arriba, titulo y precio) con el Buy Button de Shopify abajo.
-                    La foto real va en la misma posicion que los placeholders de Unsplash; el embed oculta su imagen para no duplicarla.
-                </p>
+                    
             </div>
 
             <div class="product-grid">
                 <article class="product-card" data-shopify-product-id="15895542497667">
-                    <!-- Imagen destacada: misma posicion que Unsplash; embed con contents.img false. -->
-                    <img src="https://cdn.shopify.com/s/files/1/1008/5397/3379/files/Tovarcomp-91_900x.jpg?v=1776093054" alt="TRAJE AGRIPA" loading="lazy" width="900" height="675" decoding="async">
-                    <div class="product-info">
-                        <span class="section-label">En tienda</span>
-                        <h3>TRAJE AGRIPA</h3>
-                        <p>STE TRAJE MOLA MOGOLLON Y LOS COMPRAS SIN PENSAR</p>
-                        <span class="product-price">Desde 25 EUR</span>
-                        <div class="shopify-button-placeholder" id="shopify-product-1">
-                            <div id="product-component-1776094237287"></div>
-                        </div>
+                    <div class="shopify-button-placeholder">
+                        <div id='product-component-1776346772786'></div>
+                        <script type="text/javascript">
+                    /*<![CDATA[*/
+                    (function () {
+                      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                      if (window.ShopifyBuy) {
+                        if (window.ShopifyBuy.UI) {
+                          ShopifyBuyInit();
+                        } else {
+                          loadScript();
+                        }
+                      } else {
+                        loadScript();
+                      }
+                      function loadScript() {
+                        var script = document.createElement('script');
+                        script.async = true;
+                        script.src = scriptURL;
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                        script.onload = ShopifyBuyInit;
+                      }
+                      function ShopifyBuyInit() {
+                        var client = ShopifyBuy.buildClient({
+                          domain: 'gtq3mq-vb.myshopify.com',
+                          storefrontAccessToken: '32702bb775fb3dd5990b9d63f48bd578',
+                        });
+                        ShopifyBuy.UI.onReady(client).then(function (ui) {
+                          ui.createComponent('product', {
+                            id: '15895542497667',
+                            node: document.getElementById('product-component-1776346772786'),
+                            moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+                            options: {
+                      "product": {
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "calc(25% - 20px)",
+                              "margin-left": "20px",
+                              "margin-bottom": "50px"
+                            }
+                          }
+                        },
+                        "buttonDestination": "modal",
+                        "contents": {
+                          "options": false
+                        },
+                        "text": {
+                          "button": "View product"
+                        }
+                      },
+                      "productSet": {
+                        "styles": {
+                          "products": {
+                            "@media (min-width: 601px)": {
+                              "margin-left": "-20px"
+                            }
+                          }
+                        }
+                      },
+                      "modalProduct": {
+                        "contents": {
+                          "img": false,
+                          "imgWithCarousel": true,
+                          "button": false,
+                          "buttonWithQuantity": true
+                        },
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "100%",
+                              "margin-left": "0px",
+                              "margin-bottom": "0px"
+                            }
+                          }
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        }
+                      },
+                      "option": {},
+                      "cart": {
+                        "text": {
+                          "total": "Subtotal",
+                          "button": "Checkout"
+                        }
+                      },
+                      "toggle": {}
+                    },
+                          });
+                        });
+                      }
+                    })();
+                    /*]]>*/
+                        </script>
                     </div>
                 </article>
 
-                <article class="product-card" data-shopify-product-id="15895542497667">
-                    <img src="https://cdn.shopify.com/s/files/1/1008/5397/3379/files/Tovarcomp-91_900x.jpg?v=1776093054" alt="TRAJE AGRIPA" loading="lazy" width="900" height="675" decoding="async">
-                    <div class="product-info">
-                        <span class="section-label">En tienda</span>
-                        <h3>TRAJE AGRIPA</h3>
-                        <p>STE TRAJE MOLA MOGOLLON Y LOS COMPRAS SIN PENSAR</p>
-                        <span class="product-price">Desde 25 EUR</span>
-                        <div class="shopify-button-placeholder" id="shopify-product-2">
-                            <div id="product-component-1776094550585"></div>
-                        </div>
+                <article class="product-card" data-shopify-product-id="15900901114243">
+                    <div class="shopify-button-placeholder">
+                        <div id='product-component-1776346635353'></div>
+                        <script type="text/javascript">
+                    /*<![CDATA[*/
+                    (function () {
+                      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                      if (window.ShopifyBuy) {
+                        if (window.ShopifyBuy.UI) {
+                          ShopifyBuyInit();
+                        } else {
+                          loadScript();
+                        }
+                      } else {
+                        loadScript();
+                      }
+                      function loadScript() {
+                        var script = document.createElement('script');
+                        script.async = true;
+                        script.src = scriptURL;
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                        script.onload = ShopifyBuyInit;
+                      }
+                      function ShopifyBuyInit() {
+                        var client = ShopifyBuy.buildClient({
+                          domain: 'gtq3mq-vb.myshopify.com',
+                          storefrontAccessToken: '32702bb775fb3dd5990b9d63f48bd578',
+                        });
+                        ShopifyBuy.UI.onReady(client).then(function (ui) {
+                          ui.createComponent('product', {
+                            id: '15900901114243',
+                            node: document.getElementById('product-component-1776346635353'),
+                            moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+                            options: {
+                              "product": {
+                                "styles": {
+                                  "product": {
+                                    "@media (min-width: 601px)": {
+                                      "max-width": "calc(25% - 20px)",
+                                      "margin-left": "20px",
+                                      "margin-bottom": "50px"
+                                    }
+                                  }
+                                },
+                                "buttonDestination": "modal",
+                                "contents": {
+                                  "options": false
+                                },
+                                "text": {
+                                  "button": "View product"
+                                }
+                              },
+                              "productSet": {
+                                "styles": {
+                                  "products": {
+                                    "@media (min-width: 601px)": {
+                                      "margin-left": "-20px"
+                                    }
+                                  }
+                                }
+                              },
+                              "modalProduct": {
+                                "contents": {
+                                  "img": false,
+                                  "imgWithCarousel": true,
+                                  "button": false,
+                                  "buttonWithQuantity": true
+                                },
+                                "styles": {
+                                  "product": {
+                                    "@media (min-width: 601px)": {
+                                      "max-width": "100%",
+                                      "margin-left": "0px",
+                                      "margin-bottom": "0px"
+                                    }
+                                  }
+                                },
+                                "text": {
+                                  "button": "Add to cart"
+                                }
+                              },
+                              "option": {},
+                              "cart": {
+                                "text": {
+                                  "total": "Subtotal",
+                                  "button": "Checkout"
+                                }
+                              },
+                              "toggle": {}
+                            },
+                          });
+                        });
+                      }
+                    })();
+                    /*]]>*/
+                        </script>
                     </div>
                 </article>
 
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=900&q=80" alt="Capa Legionaria" loading="lazy">
-                    <div class="product-info">
-                        <span class="section-label">Placeholder</span>
-                        <h3>Capa Legionaria</h3>
-                        <p>Capa robusta con tejido denso para eventos historicos.</p>
-                        <span class="product-price">Desde 120 EUR</span>
-                        <div class="shopify-button-placeholder" id="shopify-product-3">
-                            <!-- Aqui se insertara el codigo embebido de Shopify Buy Button para este producto -->
-                            <button type="button" class="btn btn-secondary" disabled>Boton de compra proximamente</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Subucula Artesana" loading="lazy">
-                    <div class="product-info">
-                        <span class="section-label">Placeholder</span>
-                        <h3>Subucula Artesana</h3>
-                        <p>Base ligera y transpirable para recreacion y desfile.</p>
-                        <span class="product-price">Desde 64 EUR</span>
-                        <div class="shopify-button-placeholder" id="shopify-product-4">
-                            <!-- Aqui se insertara el codigo embebido de Shopify Buy Button para este producto -->
-                            <button type="button" class="btn btn-secondary" disabled>Boton de compra proximamente</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80" alt="Cingulo de Bronce" loading="lazy">
-                    <div class="product-info">
-                        <span class="section-label">Placeholder</span>
-                        <h3>Cingulo de Bronce</h3>
-                        <p>Cinturon ornamental con herrajes de inspiracion romana.</p>
-                        <span class="product-price">Desde 49 EUR</span>
-                        <div class="shopify-button-placeholder" id="shopify-product-5">
-                            <!-- Aqui se insertara el codigo embebido de Shopify Buy Button para este producto -->
-                            <button type="button" class="btn btn-secondary" disabled>Boton de compra proximamente</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=80" alt="Pallium de Marmol" loading="lazy">
-                    <div class="product-info">
-                        <span class="section-label">Placeholder</span>
-                        <h3>Pallium de Marmol</h3>
-                        <p>Manto de lineas sobrias para composiciones clasicas.</p>
-                        <span class="product-price">Desde 88 EUR</span>
-                        <div class="shopify-button-placeholder" id="shopify-product-6">
-                            <!-- Aqui se insertara el codigo embebido de Shopify Buy Button para este producto -->
-                            <button type="button" class="btn btn-secondary" disabled>Boton de compra proximamente</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Vestis Mercator" loading="lazy">
-                    <div class="product-info">
-                        <span class="section-label">Placeholder</span>
-                        <h3>Vestis Mercator</h3>
-                        <p>Diseno funcional inspirado en atuendos de oficio romanos.</p>
-                        <span class="product-price">Desde 72 EUR</span>
-                        <div class="shopify-button-placeholder" id="shopify-product-7">
-                            <!-- Aqui se insertara el codigo embebido de Shopify Buy Button para este producto -->
-                            <button type="button" class="btn btn-secondary" disabled>Boton de compra proximamente</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=900&q=80" alt="Toga Senatorial" loading="lazy">
-                    <div class="product-info">
-                        <span class="section-label">Placeholder</span>
-                        <h3>Toga Senatorial</h3>
-                        <p>Pieza de presencia escenica para actos conmemorativos.</p>
-                        <span class="product-price">Desde 140 EUR</span>
-                        <div class="shopify-button-placeholder" id="shopify-product-8">
-                            <!-- Aqui se insertara el codigo embebido de Shopify Buy Button para este producto -->
-                            <button type="button" class="btn btn-secondary" disabled>Boton de compra proximamente</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" alt="Dalmatica Emerita" loading="lazy">
-                    <div class="product-info">
-                        <span class="section-label">Placeholder</span>
-                        <h3>Dalmatica Emerita</h3>
-                        <p>Confeccion fina con detalle en cuello y puno.</p>
-                        <span class="product-price">Desde 99 EUR</span>
-                        <div class="shopify-button-placeholder" id="shopify-product-9">
-                            <!-- Aqui se insertara el codigo embebido de Shopify Buy Button para este producto -->
-                            <button type="button" class="btn btn-secondary" disabled>Boton de compra proximamente</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Sayo de Taller" loading="lazy">
-                    <div class="product-info">
-                        <span class="section-label">Placeholder</span>
-                        <h3>Sayo de Taller</h3>
-                        <p>Prenda versatil para ambientacion historica profesional.</p>
-                        <span class="product-price">Desde 68 EUR</span>
-                        <div class="shopify-button-placeholder" id="shopify-product-10">
-                            <!-- Aqui se insertara el codigo embebido de Shopify Buy Button para este producto -->
-                            <button type="button" class="btn btn-secondary" disabled>Boton de compra proximamente</button>
-                        </div>
+                <article class="product-card" data-shopify-product-id="15900936995203">
+                    <div class="shopify-button-placeholder">
+                        <div id='product-component-1776347283385'></div>
+                        <script type="text/javascript">
+                        /*<![CDATA[*/
+                        (function () {
+                          var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                          if (window.ShopifyBuy) {
+                            if (window.ShopifyBuy.UI) {
+                              ShopifyBuyInit();
+                            } else {
+                              loadScript();
+                            }
+                          } else {
+                            loadScript();
+                          }
+                          function loadScript() {
+                            var script = document.createElement('script');
+                            script.async = true;
+                            script.src = scriptURL;
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                            script.onload = ShopifyBuyInit;
+                          }
+                          function ShopifyBuyInit() {
+                            var client = ShopifyBuy.buildClient({
+                              domain: 'gtq3mq-vb.myshopify.com',
+                              storefrontAccessToken: '32702bb775fb3dd5990b9d63f48bd578',
+                            });
+                            ShopifyBuy.UI.onReady(client).then(function (ui) {
+                              ui.createComponent('product', {
+                                id: '15900936995203',
+                                node: document.getElementById('product-component-1776347283385'),
+                                moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+                                options: {
+                          "product": {
+                            "styles": {
+                              "product": {
+                                "@media (min-width: 601px)": {
+                                  "max-width": "calc(25% - 20px)",
+                                  "margin-left": "20px",
+                                  "margin-bottom": "50px"
+                                }
+                              }
+                            },
+                            "buttonDestination": "modal",
+                            "contents": {
+                              "options": false
+                            },
+                            "text": {
+                              "button": "View product"
+                            }
+                          },
+                          "productSet": {
+                            "styles": {
+                              "products": {
+                                "@media (min-width: 601px)": {
+                                  "margin-left": "-20px"
+                                }
+                              }
+                            }
+                          },
+                          "modalProduct": {
+                            "contents": {
+                              "img": false,
+                              "imgWithCarousel": true,
+                              "button": false,
+                              "buttonWithQuantity": true
+                            },
+                            "styles": {
+                              "product": {
+                                "@media (min-width: 601px)": {
+                                  "max-width": "100%",
+                                  "margin-left": "0px",
+                                  "margin-bottom": "0px"
+                                }
+                              }
+                            },
+                            "text": {
+                              "button": "Add to cart"
+                            }
+                          },
+                          "option": {},
+                          "cart": {
+                            "text": {
+                              "total": "Subtotal",
+                              "button": "Checkout"
+                            }
+                          },
+                          "toggle": {}
+                        },
+                              });
+                            });
+                          }
+                        })();
+                        /*]]>*/
+                        </script>
                     </div>
                 </article>
             </div>
@@ -414,145 +572,5 @@
 </aside>
 
 <script src="static/js/main.js"></script>
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement("script");
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: "gtq3mq-vb.myshopify.com",
-      storefrontAccessToken: "32702bb775fb3dd5990b9d63f48bd578",
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      var moneyFormat = "%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D";
-      var sharedModalAndCart = {
-        modalProduct: {
-          contents: {
-            img: false,
-            imgWithCarousel: true,
-            button: false,
-            buttonWithQuantity: true
-          },
-          styles: {
-            product: {
-              "max-width": "100%",
-              "margin-left": "0px",
-              "margin-bottom": "0px"
-            }
-          },
-          text: {
-            button: "Añadir al carrito"
-          }
-        },
-        option: {},
-        cart: {
-          text: {
-            total: "Subtotal",
-            button: "Checkout"
-          }
-        },
-        toggle: {}
-      };
-
-      ui.createComponent("product", {
-        id: "15895542497667",
-        node: document.getElementById("product-component-1776094237287"),
-        moneyFormat: moneyFormat,
-        options: Object.assign(
-          {
-            product: {
-              contents: {
-                img: false,
-                title: false,
-                price: false,
-                description: false
-              },
-              styles: {
-                product: {
-                  "max-width": "100%",
-                  "margin-left": "0",
-                  "margin-bottom": "0"
-                },
-                button: {
-                  width: "100%"
-                }
-              },
-              text: {
-                button: "Añadir al carrito"
-              }
-            },
-            productSet: {
-              styles: {
-                products: {
-                  "margin-left": "0"
-                }
-              }
-            }
-          },
-          sharedModalAndCart
-        )
-      });
-
-      ui.createComponent("product", {
-        id: "15895542497667",
-        node: document.getElementById("product-component-1776094550585"),
-        moneyFormat: moneyFormat,
-        options: Object.assign(
-          {
-            product: {
-              buttonDestination: "modal",
-              contents: {
-                img: false,
-                title: false,
-                price: false,
-                description: false,
-                options: false
-              },
-              styles: {
-                product: {
-                  "max-width": "100%",
-                  "margin-left": "0",
-                  "margin-bottom": "0"
-                },
-                button: {
-                  width: "100%"
-                }
-              },
-              text: {
-                button: "Ver producto"
-              }
-            },
-            productSet: {
-              styles: {
-                products: {
-                  "margin-left": "0"
-                }
-              }
-            }
-          },
-          sharedModalAndCart
-        )
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
 </body>
 </html>

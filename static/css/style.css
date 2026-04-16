@@ -8,6 +8,7 @@
     --color-pizarra: #2c2a27;
     --color-blanco: #ffffff;
     --shadow-soft: 0 10px 35px rgba(44, 42, 39, 0.12);
+    --product-image-height: 240px;
 }
 
 * {
@@ -118,6 +119,15 @@ h3,
     color: var(--color-crema);
     font-size: 1.35rem;
     letter-spacing: 0.08em;
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 38px;
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .nav-links {
@@ -231,7 +241,8 @@ h3,
 }
 
 .product-card img {
-    aspect-ratio: 4/3;
+    width: 100%;
+    height: var(--product-image-height);
     object-fit: cover;
 }
 
@@ -257,9 +268,16 @@ h3,
     color: var(--color-rojo-oscuro);
 }
 
-.shopify-button-placeholder {
+/* Separador solo cuando el botón va debajo de una ficha manual (.product-info). */
+.product-info .shopify-button-placeholder {
     border-top: 1px dashed rgba(90, 31, 31, 0.4);
     padding-top: 0.8rem;
+}
+
+/* En tarjetas que son solo Shopify, sin margen arriba. */
+.product-card > .shopify-button-placeholder {
+    border-top: none;
+    padding-top: 0;
 }
 
 /* Buy Button dentro de la tarjeta: ancho completo, sin columnas de vitrina que desplazan la imagen (la foto va en .product-card > img). */
@@ -267,11 +285,26 @@ h3,
     max-width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    margin-top: 0 !important;
 }
 
 .product-card .shopify-button-placeholder .shopify-buy__btn {
     width: 100%;
     box-sizing: border-box;
+}
+
+/* Imagen del producto dentro del embed de Shopify: mismo alto que el resto. */
+.product-card .shopify-buy__product-img-wrapper {
+    width: 100%;
+    height: var(--product-image-height);
+    overflow: hidden;
+}
+
+.product-card .shopify-buy__product-img-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    display: block;
 }
 
 .handmade {
