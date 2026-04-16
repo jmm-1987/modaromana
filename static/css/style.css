@@ -110,9 +110,11 @@ h3,
     top: 0;
     left: 0;
     right: 0;
+    height: var(--navbar-height);
     z-index: 9998;
-    background: rgba(248, 244, 236, 0.92);
+    background-color: rgba(248, 244, 236, 0.94);
     border-bottom: 1px solid rgba(44, 42, 39, 0.10);
+    box-shadow: 0 6px 18px rgba(44, 42, 39, 0.10);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -502,34 +504,29 @@ h3,
 
 @media (max-width: 780px) {
     .menu-toggle {
-        display: none;
+        display: inline-block;
     }
 
     .nav-links {
-        position: static;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 0.8rem;
-        background: transparent;
-        border: none;
-        border-radius: 0;
-        padding: 0;
-        min-width: 0;
-        opacity: 1;
-        pointer-events: auto;
-        transform: none;
-        transition: none;
+        position: absolute;
+        top: 64px;
+        right: 0;
+        background: rgba(23, 20, 18, 0.92);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+        padding: 0.9rem;
+        flex-direction: column;
+        min-width: 200px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
     }
 
     .nav-links.open {
         opacity: 1;
         pointer-events: auto;
-        transform: none;
-    }
-
-    .nav-links a {
-        font-size: 0.95rem;
+        transform: translateY(0);
     }
 
     .hero-content {
