@@ -297,6 +297,7 @@ h3,
 /* Buy Button dentro de la tarjeta: ancho completo, sin columnas de vitrina que desplazan la imagen (la foto va en .product-card > img). */
 .product-card .shopify-button-placeholder .shopify-buy__product {
     max-width: 100% !important;
+    width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
     margin-top: 0 !important;
@@ -309,8 +310,11 @@ h3,
 
 /* Imagen del producto dentro del embed de Shopify: mismo alto que el resto. */
 .product-card .shopify-buy__product-img-wrapper {
+    display: block !important;
     width: 100%;
+    max-width: 100% !important;
     height: var(--product-image-height);
+    padding-bottom: 0 !important;
     overflow: hidden;
 }
 
@@ -319,6 +323,12 @@ h3,
     height: 100% !important;
     object-fit: cover;
     display: block;
+}
+
+.product-card .shopify-buy__product-img,
+.product-card .shopify-buy__product-img img {
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
 .handmade {
@@ -504,29 +514,15 @@ h3,
 
 @media (max-width: 780px) {
     .menu-toggle {
-        display: inline-block;
+        display: none;
     }
 
     .nav-links {
-        position: absolute;
-        top: 64px;
-        right: 0;
-        background: rgba(23, 20, 18, 0.92);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 10px;
-        padding: 0.9rem;
-        flex-direction: column;
-        min-width: 200px;
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(-8px);
-        transition: opacity 0.2s ease, transform 0.2s ease;
+        display: none;
     }
 
     .nav-links.open {
-        opacity: 1;
-        pointer-events: auto;
-        transform: translateY(0);
+        display: none;
     }
 
     .hero-content {
