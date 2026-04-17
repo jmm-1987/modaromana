@@ -90,3 +90,20 @@ if (cookieReject) {
         hideCookieBanner();
     });
 }
+
+document.addEventListener("click", (event) => {
+    const productImage = event.target.closest(".shopify-buy__product-img-wrapper, .shopify-buy__product-img");
+    if (!productImage) {
+        return;
+    }
+
+    const productCard = productImage.closest(".product-card");
+    if (!productCard) {
+        return;
+    }
+
+    const viewButton = productCard.querySelector(".shopify-buy__btn");
+    if (viewButton) {
+        viewButton.click();
+    }
+});

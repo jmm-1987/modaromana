@@ -67,6 +67,18 @@ h3,
     font-size: 0.85rem;
 }
 
+.delivery-guarantee {
+    margin: 0.8rem auto 0;
+    width: fit-content;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid rgba(90, 31, 31, 0.2);
+    background: rgba(143, 78, 53, 0.08);
+    color: var(--color-rojo-oscuro);
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
 .hero {
     position: relative;
     min-height: 92vh;
@@ -207,6 +219,18 @@ h3,
     max-width: 60ch;
 }
 
+.hero-guarantee {
+    margin: 0;
+    width: fit-content;
+    padding: 0.42rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
 .btn {
     display: inline-block;
     border: none;
@@ -216,6 +240,10 @@ h3,
     text-decoration: none;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-content .btn {
+    justify-self: start;
 }
 
 .btn:hover {
@@ -603,6 +631,10 @@ h3,
 
     .hero-content {
         padding-bottom: 3.5rem;
+    }
+
+    .hero-content .btn {
+        justify-self: center;
     }
 
     .product-grid {
