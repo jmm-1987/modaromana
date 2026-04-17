@@ -320,6 +320,7 @@ h3,
 .product-card > .shopify-button-placeholder {
     border-top: none;
     padding-top: 0;
+    overflow: hidden;
 }
 
 /* Buy Button dentro de la tarjeta: ancho completo, sin columnas de vitrina que desplazan la imagen (la foto va en .product-card > img). */
@@ -329,6 +330,12 @@ h3,
     margin-left: 0 !important;
     margin-right: 0 !important;
     margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    box-sizing: border-box;
+}
+
+.product-card .shopify-buy__product * {
+    box-sizing: border-box;
 }
 
 .product-card .shopify-button-placeholder .shopify-buy__btn {
@@ -366,6 +373,26 @@ h3,
     width: 100% !important;
     max-width: 100% !important;
     display: block;
+}
+
+.product-card .shopify-buy__product__title,
+.product-card .shopify-buy__product__price,
+.product-card .shopify-buy__product__actual-price,
+.product-card .shopify-buy__product__compare-price,
+.product-card .shopify-buy__product__unit-price {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* En la rejilla NO mostramos precio: solo en la ficha/modal del producto. */
+.product-card .shopify-buy__product__price,
+.product-card .shopify-buy__product__actual-price,
+.product-card .shopify-buy__product__compare-price,
+.product-card .shopify-buy__product__unit-price {
+    display: none !important;
 }
 
 /* Zoom ligero solo en la primera tarjeta. */
