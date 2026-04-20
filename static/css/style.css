@@ -395,6 +395,54 @@ h3,
     display: none !important;
 }
 
+/* En las primeras 4 tarjetas mostramos precio pequeño entre título y botón. */
+.product-card--agripa .shopify-buy__product__price,
+.product-card--justiniano .shopify-buy__product__price,
+.product-card--lucio .shopify-buy__product__price,
+.product-card--octavia-capa .shopify-buy__product__price {
+    display: block !important;
+    margin: 0.2rem 0 0.65rem !important;
+    padding: 0 1rem !important;
+    font-family: "Inter", sans-serif !important;
+    font-size: 0 !important;
+    white-space: nowrap !important;
+    color: transparent !important;
+}
+
+.product-card--agripa .shopify-buy__product__actual-price,
+.product-card--justiniano .shopify-buy__product__actual-price,
+.product-card--lucio .shopify-buy__product__actual-price,
+.product-card--octavia-capa .shopify-buy__product__actual-price {
+    display: none !important;
+}
+
+.product-card--agripa .shopify-buy__product__price::before,
+.product-card--justiniano .shopify-buy__product__price::before,
+.product-card--lucio .shopify-buy__product__price::before,
+.product-card--octavia-capa .shopify-buy__product__price::before {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #6f675d;
+}
+
+.product-card--agripa .shopify-buy__product__price::before {
+    content: "desde 75€";
+}
+
+.product-card--justiniano .shopify-buy__product__price::before {
+    content: "desde 80€";
+}
+
+.product-card--lucio .shopify-buy__product__price::before {
+    content: "desde 80€";
+}
+
+.product-card--octavia-capa .shopify-buy__product__price::before {
+    content: "desde 95€";
+}
+
 /* Zoom ligero solo en la primera tarjeta. */
 #product-component-1776346772786 .shopify-buy__product-img-wrapper img {
     transform: scale(1.08);
@@ -409,6 +457,75 @@ h3,
 .about-content {
     text-align: center;
     max-width: 780px;
+}
+
+.testimonials {
+    background: linear-gradient(180deg, #f4ecdf, #efe4d4);
+}
+
+.testimonials-slider {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 0.75rem;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
+.testimonials-track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 2rem) / 3);
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0.2rem;
+    scrollbar-width: none;
+}
+
+.testimonials-track::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-card {
+    background: #fff9f1;
+    border: 1px solid rgba(169, 124, 80, 0.28);
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+    padding: 1rem;
+    scroll-snap-align: start;
+}
+
+.testimonial-text {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: #3e3a34;
+}
+
+.testimonial-author {
+    margin: 0.85rem 0 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #6f675d;
+}
+
+.testimonial-nav {
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 1px solid rgba(169, 124, 80, 0.5);
+    border-radius: 999px;
+    background: #fff8ec;
+    color: #6a4a2f;
+    font-size: 1.3rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.testimonial-nav:hover {
+    background: #f3e6d3;
+    transform: translateY(-1px);
 }
 
 .about {
@@ -641,6 +758,10 @@ h3,
     .product-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+
+    .testimonials-track {
+        grid-auto-columns: calc((100% - 1rem) / 2);
+    }
 }
 
 @media (max-width: 780px) {
@@ -666,6 +787,18 @@ h3,
 
     .product-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .testimonials-slider {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-track {
+        grid-auto-columns: 100%;
+    }
+
+    .testimonial-nav {
+        display: none;
     }
 
     .footer-content {
@@ -705,5 +838,9 @@ h3,
 
     .product-grid {
         grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        padding: 0.9rem;
     }
 }

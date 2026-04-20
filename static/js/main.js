@@ -107,3 +107,36 @@ document.addEventListener("click", (event) => {
         viewButton.click();
     }
 });
+
+const testimonialsTrack = document.querySelector(".testimonials-track");
+const testimonialPrev = document.querySelector(".testimonial-prev");
+const testimonialNext = document.querySelector(".testimonial-next");
+
+function moveTestimonials(direction) {
+    if (!testimonialsTrack) {
+        return;
+    }
+
+    const firstCard = testimonialsTrack.querySelector(".testimonial-card");
+    if (!firstCard) {
+        return;
+    }
+
+    const cardWidth = firstCard.getBoundingClientRect().width;
+    const trackStyles = window.getComputedStyle(testimonialsTrack);
+    const cardGap = parseFloat(trackStyles.columnGap) || 16;
+    const scrollStep = cardWidth + cardGap;
+
+    testimonialsTrack.scrollBy({
+        left: direction * scrollStep,
+        behavior: "smooth"
+    });
+}
+
+if (testimonialPrev) {
+    testimonialPrev.addEventListener("click", () => moveTestimonials(-1));
+}
+
+if (testimonialNext) {
+    testimonialNext.addEventListener("click", () => moveTestimonials(1));
+}
