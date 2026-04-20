@@ -387,60 +387,21 @@ h3,
     padding-right: 1rem;
 }
 
-/* En la rejilla NO mostramos precio: solo en la ficha/modal del producto. */
+/* Precio visible en todas las tarjetas, con el mismo estilo. */
 .product-card .shopify-buy__product__price,
 .product-card .shopify-buy__product__actual-price,
 .product-card .shopify-buy__product__compare-price,
 .product-card .shopify-buy__product__unit-price {
-    display: none !important;
-}
-
-/* En las primeras 4 tarjetas mostramos precio pequeño entre título y botón. */
-.product-card--agripa .shopify-buy__product__price,
-.product-card--justiniano .shopify-buy__product__price,
-.product-card--lucio .shopify-buy__product__price,
-.product-card--octavia-capa .shopify-buy__product__price {
     display: block !important;
     margin: 0.2rem 0 0.65rem !important;
     padding: 0 1rem !important;
     font-family: "Inter", sans-serif !important;
-    font-size: 0 !important;
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
     white-space: nowrap !important;
-    color: transparent !important;
-}
-
-.product-card--agripa .shopify-buy__product__actual-price,
-.product-card--justiniano .shopify-buy__product__actual-price,
-.product-card--lucio .shopify-buy__product__actual-price,
-.product-card--octavia-capa .shopify-buy__product__actual-price {
-    display: none !important;
-}
-
-.product-card--agripa .shopify-buy__product__price::before,
-.product-card--justiniano .shopify-buy__product__price::before,
-.product-card--lucio .shopify-buy__product__price::before,
-.product-card--octavia-capa .shopify-buy__product__price::before {
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-transform: none;
-    letter-spacing: 0;
-    color: #6f675d;
-}
-
-.product-card--agripa .shopify-buy__product__price::before {
-    content: "desde 75€";
-}
-
-.product-card--justiniano .shopify-buy__product__price::before {
-    content: "desde 80€";
-}
-
-.product-card--lucio .shopify-buy__product__price::before {
-    content: "desde 80€";
-}
-
-.product-card--octavia-capa .shopify-buy__product__price::before {
-    content: "desde 95€";
+    color: #6f675d !important;
 }
 
 /* Zoom ligero solo en la primera tarjeta. */
