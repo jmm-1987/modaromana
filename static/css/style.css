@@ -204,8 +204,10 @@ h3,
 
 .hero h1 {
     margin: 0;
-    font-size: clamp(2.5rem, 7vw, 5.2rem);
-    letter-spacing: 0.16em;
+    font-size: clamp(1.8rem, 3.8vw, 3.1rem);
+    letter-spacing: 0.03em;
+    line-height: 1.15;
+    max-width: 18ch;
 }
 
 .hero-subtitle {
