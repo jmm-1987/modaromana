@@ -140,3 +140,73 @@ if (testimonialPrev) {
 if (testimonialNext) {
     testimonialNext.addEventListener("click", () => moveTestimonials(1));
 }
+
+function getCheckoutSubtotalFromDom() {
+    const subtotalNode = document.querySelector(
+        ".shopify-buy__cart__subtotal__price, .shopify-buy__cart__subtotal, .shopify-buy__cart__footer .shopify-buy__cart__subtotal__price"
+    );
+    if (!subtotalNode) {
+        return null;
+    }
+
+    const text = (subtotalNode.textContent || "").replace(/\s+/g, " ").trim();
+    if (!text) {
+        return null;
+    }
+
+    // Normaliza formatos tipo "1.234,56 €" o "1234.56 EUR" a número.
+    const numeric = text
+        .replace(/[^\d,.\-]/g, "")
+        .replace(/\.(?=.*\.)/g, "")
+        .replace(",", ".");
+    const value = Number.parseFloat(numeric);
+    return Number.isFinite(value) ? value : null;
+}
+
+function getCheckoutAttemptId() {
+    const key = "weark_checkout_attempt_seq";
+    const current = Number.parseInt(localStorage.getItem(key) || "0", 10) || 0;
+    const next = current + 1;
+    localStorage.setItem(key, String(next));
+    return `attempt-${Date.now()}-${next}`;
+}
+
+function pushCheckoutTrackingData() {
+    const transactionTotal = getCheckoutSubtotalFromDom();
+    const transactionId = getCheckoutAttemptId();
+    const value = transactionTotal ?? 0;
+
+    window.dataLayer = window.dataLayer || [];
+
+    // Compatibilidad con el snippet antiguo (mismas claves que el Liquid de Shopify).
+    window.dataLayer.push({
+        transactionTotal: value,
+        transactionId
+    });
+
+    // Evento GA4 recomendado vía dataLayer (GTM puede mapearlo a GA4: begin_checkout).
+    // Limpia ecommerce previo (patrón habitual en GTM para evitar “herencia” de datos).
+    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+        event: "begin_checkout",
+        transactionId,
+        ecommerce: {
+            currency: "EUR",
+            value,
+            // items: [] se puede rellenar más adelante si se leen líneas del carrito en el DOM.
+            items: []
+        }
+    });
+}
+
+document.addEventListener("click", (event) => {
+    const checkoutButton = event.target.closest(
+        ".shopify-buy__btn--cart-checkout, .shopify-buy__cart__checkout, .shopify-buy__cart__footer .shopify-buy__btn"
+    );
+
+    if (!checkoutButton) {
+        return;
+    }
+
+    pushCheckoutTrackingData();
+});
