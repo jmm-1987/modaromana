@@ -233,6 +233,33 @@ h3,
     font-size: 0.9rem;
 }
 
+@keyframes hero-guarantee-blink {
+    0%, 45% {
+        opacity: 1;
+    }
+    50%, 95% {
+        opacity: 0.45;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-guarantee--deadline {
+    max-width: min(42rem, 100%);
+    border-color: rgba(220, 38, 38, 0.85);
+    background: rgba(40, 0, 0, 0.55);
+    color: #ff4d4d;
+    animation: hero-guarantee-blink 1.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-guarantee--deadline {
+        animation: none;
+        opacity: 1;
+    }
+}
+
 .btn {
     display: inline-block;
     border: none;
