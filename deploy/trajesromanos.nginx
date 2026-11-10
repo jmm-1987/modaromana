@@ -1,0 +1,38 @@
+server {
+    listen 80;
+    server_name trajesromanos.com www.trajesromanos.com;
+
+    root /var/www/trajesromanos/modaromana;
+    index index.html;
+    client_max_body_size 2m;
+
+    location ~ /\. {
+        deny all;
+    }
+
+    location ^~ /data/ { deny all; }
+    location ^~ /deploy/ { deny all; }
+    location ^~ /__pycache__/ { deny all; }
+    location = /app.py { deny all; }
+    location = /catalog.json { deny all; }
+    location = /requirements.txt { deny all; }
+    location = /GUIA-VPS.md { deny all; }
+
+    location /api/ {
+        proxy_pass http://127.0.0.1:8001;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /admin {
+        proxy_pass http://127.0.0.1:8001;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}

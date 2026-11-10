@@ -1,42 +1,18 @@
-# WEARK - Web corporativa estatica
+# WEARK — tienda de trajes romanos
 
-Landing page corporativa para **WEARK**, inspirada en la antigua Roma y preparada para integrar Shopify Buy Button en la seccion de articulos.
+La web se sirve con un pequeño servidor (Flask). El catálogo y el carrito son de esta tienda. El cobro lo hace MONEI.
 
-## Ejecucion local
+Para instalarla en el VPS, sigue `GUIA-VPS.md`.
 
-No requiere backend ni base de datos.
-
-### Opcion 1: abrir directamente
-
-Abre `index.html` con tu navegador.
-
-### Opcion 2: servidor local simple (recomendado)
-
-Desde la carpeta del proyecto:
+## Probar en el ordenador
 
 ```powershell
-python -m http.server 5500
+py -3 -m venv .venv
+.\.venv\Scripts\python -m pip install -r requirements.txt
+$env:MONEI_MOCK = "1"
+$env:ADMIN_PASSWORD = "prueba-local"
+$env:PUBLIC_BASE_URL = "http://127.0.0.1:8001"
+.\.venv\Scripts\python app.py
 ```
 
-Luego abre:
-
-`http://127.0.0.1:5500`
-
-## Estructura del proyecto
-
-```text
-modaromana/
-├── index.html
-├── README.md
-├── SHOPIFY_INTEGRACION.md
-└── static/
-    ├── css/
-    │   └── style.css
-    ├── js/
-    │   └── main.js
-    └── img/
-```
-
-## Despliegue
-
-Al ser una web estatica, puedes desplegarla en cualquier hosting de archivos estaticos (Render Static Site, Netlify, Vercel, GitHub Pages, etc.).
+Abre `http://127.0.0.1:8001`. Con `MONEI_MOCK=1` no se cobra. En el servidor ese valor tiene que ser `0` y hace falta `MONEI_API_KEY`.

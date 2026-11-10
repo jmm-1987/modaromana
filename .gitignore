@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+data/*.db
+data/*.db-*
+_catalog_raw.json
+_build_catalog.py

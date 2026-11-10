@@ -1,0 +1,15 @@
+[Unit]
+Description=Tienda WEARK trajes romanos
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/trajesromanos/modaromana
+EnvironmentFile=/var/www/trajesromanos/modaromana/.env
+ExecStart=/var/www/trajesromanos/modaromana/.venv/bin/gunicorn -w 2 -b 127.0.0.1:8001 app:app
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

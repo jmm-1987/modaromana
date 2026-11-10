@@ -1,0 +1,1532 @@
+{
+  "currency": "EUR",
+  "shipping_cents": 900,
+  "free_shipping_from_cents": 6000,
+  "products": [
+    {
+      "id": "traje-agripa",
+      "title": "AGRIPA",
+      "description": "Agripa - Traje romano en lino de estilo auténtico. Conjunto de 3 piezas: túnica, cíngulo y toga. El traje romano Agripa es la opción ideal para quienes buscan un vestuario romano auténtico, elegante y clásico, confeccionado en lino sostenible, reciclado y tratado de alta calidad. Este conjunto Agripa cuenta con túnica romana de corte clásico, decorada con elegantes grecas en tejido combinado que aportando luz y un contraste de sofisticación. Cuenta con un cíngulo o cinturón de cordón ajustable que permite adaptar fácilmente la túnica al cuerpo. Completa el conjunto una toga de puerta distinguida que ofrece ligereza, comodidad y una presencia imponente. Las grecas decorativas, inspiradas en diseños originales de la antigua Roma, aportan un acabado exclusivo perfecto para recreación histórica, eventos temáticos y espectáculos. Un diseño romano único, fabricado con materiales sostenibles, pensado para destacar con autenticidad y estilo clásico. Disponible en 4 combinaciones de colores.",
+      "image": "static/img/productos/traje-agripa.jpg",
+      "options": [
+        {
+          "name": "Color",
+          "values": [
+            "AZUL - MARINO",
+            "NARANJA",
+            "VERDE MUSGO",
+            "CELESTE Y AZUL",
+            "GRIS"
+          ]
+        },
+        {
+          "name": "TIPO",
+          "values": [
+            "TUNICA Y CÍNGULO",
+            "TOGA",
+            "TRAJE COMPLETO"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "57836629033347",
+          "label": "AZUL - MARINO / TUNICA Y CÍNGULO",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "AZUL - MARINO",
+            "TIPO": "TUNICA Y CÍNGULO"
+          }
+        },
+        {
+          "id": "57836629066115",
+          "label": "AZUL - MARINO / TOGA",
+          "price_cents": 5000,
+          "available": true,
+          "options": {
+            "Color": "AZUL - MARINO",
+            "TIPO": "TOGA"
+          }
+        },
+        {
+          "id": "57836629098883",
+          "label": "AZUL - MARINO / TRAJE COMPLETO",
+          "price_cents": 11800,
+          "available": true,
+          "options": {
+            "Color": "AZUL - MARINO",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57833451979139",
+          "label": "NARANJA / TUNICA Y CÍNGULO",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "NARANJA",
+            "TIPO": "TUNICA Y CÍNGULO"
+          }
+        },
+        {
+          "id": "57833452011907",
+          "label": "NARANJA / TOGA",
+          "price_cents": 5000,
+          "available": true,
+          "options": {
+            "Color": "NARANJA",
+            "TIPO": "TOGA"
+          }
+        },
+        {
+          "id": "57867905663363",
+          "label": "NARANJA / TRAJE COMPLETO",
+          "price_cents": 11800,
+          "available": true,
+          "options": {
+            "Color": "NARANJA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57867576476035",
+          "label": "VERDE MUSGO / TUNICA Y CÍNGULO",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "VERDE MUSGO",
+            "TIPO": "TUNICA Y CÍNGULO"
+          }
+        },
+        {
+          "id": "57867840782723",
+          "label": "VERDE MUSGO / TOGA",
+          "price_cents": 5000,
+          "available": true,
+          "options": {
+            "Color": "VERDE MUSGO",
+            "TIPO": "TOGA"
+          }
+        },
+        {
+          "id": "57803335631235",
+          "label": "VERDE MUSGO / TRAJE COMPLETO",
+          "price_cents": 11800,
+          "available": true,
+          "options": {
+            "Color": "VERDE MUSGO",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57833451848067",
+          "label": "CELESTE Y AZUL / TUNICA Y CÍNGULO",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "CELESTE Y AZUL",
+            "TIPO": "TUNICA Y CÍNGULO"
+          }
+        },
+        {
+          "id": "57833451880835",
+          "label": "CELESTE Y AZUL / TOGA",
+          "price_cents": 5000,
+          "available": true,
+          "options": {
+            "Color": "CELESTE Y AZUL",
+            "TIPO": "TOGA"
+          }
+        },
+        {
+          "id": "57803269964163",
+          "label": "CELESTE Y AZUL / TRAJE COMPLETO",
+          "price_cents": 11800,
+          "available": true,
+          "options": {
+            "Color": "CELESTE Y AZUL",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57868086706563",
+          "label": "GRIS / TUNICA Y CÍNGULO",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "GRIS",
+            "TIPO": "TUNICA Y CÍNGULO"
+          }
+        },
+        {
+          "id": "57868104171907",
+          "label": "GRIS / TOGA",
+          "price_cents": 5000,
+          "available": true,
+          "options": {
+            "Color": "GRIS",
+            "TIPO": "TOGA"
+          }
+        },
+        {
+          "id": "57868066849155",
+          "label": "GRIS / TRAJE COMPLETO",
+          "price_cents": 11800,
+          "available": true,
+          "options": {
+            "Color": "GRIS",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        }
+      ]
+    },
+    {
+      "id": "justiniano",
+      "title": "JUSTINIANO",
+      "description": "Traje romano Justiniano – Túnica premium con capa majestuosa. Conjunto en 2 piezas: Túnica con cíngulo y capa. El traje romano Justiniano destaca por su elegancia y espectacular presencia, ideal para quienes buscan un vestuario romano auténtico y de alto impacto. Confeccionado con lino reciclado y teñido de alta calidad, un tejido sostenible con acabado premium. Este modelo incluye una túnica larga y señorial decorada con grecas de inspiración romana y una impresionante capa (o paludamentumcon) con mangas y grecas en consonancia con la túnica. Elaborada con más de 6 metros de tejido premium que aportan volumen, movimiento con una caída majestuosa. Además, la capa está tintada a doble cara, ofreciendo un acabado cuidado y espectacular desde cualquier ángulo. Disponible en 4 colores, el traje Justiniano combina tradición, diseño y sostenibilidad, convirtiéndose en una opción perfecta para recreación histórica, eventos temáticos y espectáculos. Un traje romano exclusivo, pensado para destacar con fuerza, elegancia y autenticidad.",
+      "image": "static/img/productos/justiniano.jpg",
+      "options": [
+        {
+          "name": "Color",
+          "values": [
+            "BEIGE - PÚRPURA",
+            "GRIS",
+            "PÚRPURA",
+            "MARRÓN"
+          ]
+        },
+        {
+          "name": "TIPO",
+          "values": [
+            "TÚNICA CON CÍNGULO",
+            "CAPA LUX EMERITA",
+            "TRAJE COMPLETO"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "57803958616451",
+          "label": "BEIGE - PÚRPURA / TÚNICA CON CÍNGULO",
+          "price_cents": 8000,
+          "available": true,
+          "options": {
+            "Color": "BEIGE - PÚRPURA",
+            "TIPO": "TÚNICA CON CÍNGULO"
+          }
+        },
+        {
+          "id": "57833944711555",
+          "label": "BEIGE - PÚRPURA / CAPA LUX EMERITA",
+          "price_cents": 12500,
+          "available": true,
+          "options": {
+            "Color": "BEIGE - PÚRPURA",
+            "TIPO": "CAPA LUX EMERITA"
+          }
+        },
+        {
+          "id": "57833944744323",
+          "label": "BEIGE - PÚRPURA / TRAJE COMPLETO",
+          "price_cents": 18500,
+          "available": true,
+          "options": {
+            "Color": "BEIGE - PÚRPURA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57803958583683",
+          "label": "GRIS / TÚNICA CON CÍNGULO",
+          "price_cents": 8000,
+          "available": true,
+          "options": {
+            "Color": "GRIS",
+            "TIPO": "TÚNICA CON CÍNGULO"
+          }
+        },
+        {
+          "id": "57833944646019",
+          "label": "GRIS / CAPA LUX EMERITA",
+          "price_cents": 12500,
+          "available": true,
+          "options": {
+            "Color": "GRIS",
+            "TIPO": "CAPA LUX EMERITA"
+          }
+        },
+        {
+          "id": "57833944678787",
+          "label": "GRIS / TRAJE COMPLETO",
+          "price_cents": 18500,
+          "available": true,
+          "options": {
+            "Color": "GRIS",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57803958649219",
+          "label": "PÚRPURA / TÚNICA CON CÍNGULO",
+          "price_cents": 8000,
+          "available": true,
+          "options": {
+            "Color": "PÚRPURA",
+            "TIPO": "TÚNICA CON CÍNGULO"
+          }
+        },
+        {
+          "id": "57833944777091",
+          "label": "PÚRPURA / CAPA LUX EMERITA",
+          "price_cents": 12500,
+          "available": true,
+          "options": {
+            "Color": "PÚRPURA",
+            "TIPO": "CAPA LUX EMERITA"
+          }
+        },
+        {
+          "id": "57833944809859",
+          "label": "PÚRPURA / TRAJE COMPLETO",
+          "price_cents": 18500,
+          "available": true,
+          "options": {
+            "Color": "PÚRPURA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57803958681987",
+          "label": "MARRÓN / TÚNICA CON CÍNGULO",
+          "price_cents": 8000,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN",
+            "TIPO": "TÚNICA CON CÍNGULO"
+          }
+        },
+        {
+          "id": "57833944842627",
+          "label": "MARRÓN / CAPA LUX EMERITA",
+          "price_cents": 12500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN",
+            "TIPO": "CAPA LUX EMERITA"
+          }
+        },
+        {
+          "id": "57833944875395",
+          "label": "MARRÓN / TRAJE COMPLETO",
+          "price_cents": 18500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lucio",
+      "title": "LUCIO",
+      "description": "Traje romano Lucio – Distinción clásica con detalles premium. Conjunto de 3 piezas. Túnica, cinturón y capa. El traje romano Lucio es una pieza elegante y sofisticada, diseñada para quienes buscan un vestuario romano con carácter y presencia. Confeccionado en lino reciclado, tratado de alta calidad, combina comodidad y ligereza con un acabado distinguido y cuidado. Este conjunto incluye una túnica larga y señorial acompañada por una majestuosa capa (o paludamentum) de aproximadamente 4 metros de tela, que aporta movimiento y una caída elegante. Destacan sus hombreras estructuradas, elaboradas en tela y piel sintética, que refuerzan su estética imponente y diferenciadora. Se completa con un cinturón de piel sintética que define la silueta y aporta un toque distintivo al conjunto. Disponible en 3 combinaciones de colores, permite adaptarse a diferentes estilos y preferencias de los gustos más imperiales. Un traje romano versátil, sostenible y con gran personalidad, ideal para recreación histórica, eventos temáticos y espectáculos.",
+      "image": "static/img/productos/lucio.jpg",
+      "options": [
+        {
+          "name": "COLOR",
+          "values": [
+            "ROJO - NEGRO",
+            "BEIGE - PÚRPURA",
+            "AZUL - MARINO"
+          ]
+        },
+        {
+          "name": "TIPO",
+          "values": [
+            "TÚNICA CON CÍNGULO",
+            "CAPA PREMIUM",
+            "TRAJE COMPLETO"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "57804091195779",
+          "label": "ROJO - NEGRO / TÚNICA CON CÍNGULO",
+          "price_cents": 8000,
+          "available": true,
+          "options": {
+            "COLOR": "ROJO - NEGRO",
+            "TIPO": "TÚNICA CON CÍNGULO"
+          }
+        },
+        {
+          "id": "57836695060867",
+          "label": "ROJO - NEGRO / CAPA PREMIUM",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "COLOR": "ROJO - NEGRO",
+            "TIPO": "CAPA PREMIUM"
+          }
+        },
+        {
+          "id": "57836695093635",
+          "label": "ROJO - NEGRO / TRAJE COMPLETO",
+          "price_cents": 15500,
+          "available": true,
+          "options": {
+            "COLOR": "ROJO - NEGRO",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57804091228547",
+          "label": "BEIGE - PÚRPURA / TÚNICA CON CÍNGULO",
+          "price_cents": 8000,
+          "available": true,
+          "options": {
+            "COLOR": "BEIGE - PÚRPURA",
+            "TIPO": "TÚNICA CON CÍNGULO"
+          }
+        },
+        {
+          "id": "57836695126403",
+          "label": "BEIGE - PÚRPURA / CAPA PREMIUM",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "COLOR": "BEIGE - PÚRPURA",
+            "TIPO": "CAPA PREMIUM"
+          }
+        },
+        {
+          "id": "57836695159171",
+          "label": "BEIGE - PÚRPURA / TRAJE COMPLETO",
+          "price_cents": 15500,
+          "available": true,
+          "options": {
+            "COLOR": "BEIGE - PÚRPURA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57804091261315",
+          "label": "AZUL - MARINO / TÚNICA CON CÍNGULO",
+          "price_cents": 8000,
+          "available": true,
+          "options": {
+            "COLOR": "AZUL - MARINO",
+            "TIPO": "TÚNICA CON CÍNGULO"
+          }
+        },
+        {
+          "id": "57836695191939",
+          "label": "AZUL - MARINO / CAPA PREMIUM",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "COLOR": "AZUL - MARINO",
+            "TIPO": "CAPA PREMIUM"
+          }
+        },
+        {
+          "id": "57836695224707",
+          "label": "AZUL - MARINO / TRAJE COMPLETO",
+          "price_cents": 15500,
+          "available": true,
+          "options": {
+            "COLOR": "AZUL - MARINO",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        }
+      ]
+    },
+    {
+      "id": "octavia-tunica",
+      "title": "OCTAVIA C",
+      "description": "Traje romano Octavia con capa - Elegancia femenina en lino. Conjunto de 3 piezas. Vestido, cinturón y capa. El traje romano Octavia es una propuesta sofisticada y femenina, diseñada para destacar con elegancia y autenticidad. Confeccionado en lino de alta calidad, ofrece una caída natural, frescura y comodidad, ideal para un vestuario romano cuidado y con estilo. El conjunto está compuesto por un vestido escotado que realza la silueta, acompañado de un cinturón con grecas decorativas de inspiración romana que aporta carácter y definición. El conjunto culmina con una vaporosa capa de lino con grecas en armonía con los motivos del cinturón, que aporta una presencia majestuosa y un movimiento etéreo. Disponible en 6 combinaciones de colores, el traje Octavia permite adaptarse a diferentes estilos, manteniendo siempre una estética clásica y refinada. Un vestido romano versátil, elegante y atemporal, perfecto para recreación histórica, eventos temáticos y espectáculos.",
+      "image": "static/img/productos/octavia-tunica.jpg",
+      "options": [
+        {
+          "name": "Color",
+          "values": [
+            "ROSA - CELESTE",
+            "AZUL - BEIGE",
+            "CELESTE Y AZUL",
+            "BEIGE - PÚRPURA",
+            "TIERRA",
+            "VERDE AGUA",
+            "VEIGE Y NEGRO",
+            "PÚRPURA"
+          ]
+        },
+        {
+          "name": "TIPO",
+          "values": [
+            "VESTIDO CON CINTURON",
+            "CAPA",
+            "TRAJE COMPLETO"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "57806818443651",
+          "label": "ROSA - CELESTE / VESTIDO CON CINTURON",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "ROSA - CELESTE",
+            "TIPO": "VESTIDO CON CINTURON"
+          }
+        },
+        {
+          "id": "57837241074051",
+          "label": "ROSA - CELESTE / CAPA",
+          "price_cents": 4500,
+          "available": true,
+          "options": {
+            "Color": "ROSA - CELESTE",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57837241106819",
+          "label": "ROSA - CELESTE / TRAJE COMPLETO",
+          "price_cents": 12900,
+          "available": true,
+          "options": {
+            "Color": "ROSA - CELESTE",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57806818410883",
+          "label": "AZUL - BEIGE / VESTIDO CON CINTURON",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "AZUL - BEIGE",
+            "TIPO": "VESTIDO CON CINTURON"
+          }
+        },
+        {
+          "id": "57837241008515",
+          "label": "AZUL - BEIGE / CAPA",
+          "price_cents": 4500,
+          "available": true,
+          "options": {
+            "Color": "AZUL - BEIGE",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57837241041283",
+          "label": "AZUL - BEIGE / TRAJE COMPLETO",
+          "price_cents": 12900,
+          "available": true,
+          "options": {
+            "Color": "AZUL - BEIGE",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57806818378115",
+          "label": "CELESTE Y AZUL / VESTIDO CON CINTURON",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "CELESTE Y AZUL",
+            "TIPO": "VESTIDO CON CINTURON"
+          }
+        },
+        {
+          "id": "57837240942979",
+          "label": "CELESTE Y AZUL / CAPA",
+          "price_cents": 4500,
+          "available": true,
+          "options": {
+            "Color": "CELESTE Y AZUL",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57837240975747",
+          "label": "CELESTE Y AZUL / TRAJE COMPLETO",
+          "price_cents": 12900,
+          "available": true,
+          "options": {
+            "Color": "CELESTE Y AZUL",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57806818476419",
+          "label": "BEIGE - PÚRPURA / VESTIDO CON CINTURON",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "BEIGE - PÚRPURA",
+            "TIPO": "VESTIDO CON CINTURON"
+          }
+        },
+        {
+          "id": "57837241139587",
+          "label": "BEIGE - PÚRPURA / CAPA",
+          "price_cents": 4500,
+          "available": true,
+          "options": {
+            "Color": "BEIGE - PÚRPURA",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57837241172355",
+          "label": "BEIGE - PÚRPURA / TRAJE COMPLETO",
+          "price_cents": 12900,
+          "available": true,
+          "options": {
+            "Color": "BEIGE - PÚRPURA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57806818509187",
+          "label": "TIERRA / VESTIDO CON CINTURON",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "TIERRA",
+            "TIPO": "VESTIDO CON CINTURON"
+          }
+        },
+        {
+          "id": "57837241205123",
+          "label": "TIERRA / CAPA",
+          "price_cents": 4500,
+          "available": true,
+          "options": {
+            "Color": "TIERRA",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57837241237891",
+          "label": "TIERRA / TRAJE COMPLETO",
+          "price_cents": 12900,
+          "available": true,
+          "options": {
+            "Color": "TIERRA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57806818541955",
+          "label": "VERDE AGUA / VESTIDO CON CINTURON",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "VERDE AGUA",
+            "TIPO": "VESTIDO CON CINTURON"
+          }
+        },
+        {
+          "id": "57837241270659",
+          "label": "VERDE AGUA / CAPA",
+          "price_cents": 4500,
+          "available": true,
+          "options": {
+            "Color": "VERDE AGUA",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57837241303427",
+          "label": "VERDE AGUA / TRAJE COMPLETO",
+          "price_cents": 12900,
+          "available": true,
+          "options": {
+            "Color": "VERDE AGUA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57806818574723",
+          "label": "VEIGE Y NEGRO / VESTIDO CON CINTURON",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "VEIGE Y NEGRO",
+            "TIPO": "VESTIDO CON CINTURON"
+          }
+        },
+        {
+          "id": "57837241336195",
+          "label": "VEIGE Y NEGRO / CAPA",
+          "price_cents": 4500,
+          "available": true,
+          "options": {
+            "Color": "VEIGE Y NEGRO",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57837241368963",
+          "label": "VEIGE Y NEGRO / TRAJE COMPLETO",
+          "price_cents": 12900,
+          "available": true,
+          "options": {
+            "Color": "VEIGE Y NEGRO",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57888526074243",
+          "label": "PÚRPURA / VESTIDO CON CINTURON",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "PÚRPURA",
+            "TIPO": "VESTIDO CON CINTURON"
+          }
+        },
+        {
+          "id": "57888526107011",
+          "label": "PÚRPURA / CAPA",
+          "price_cents": 4500,
+          "available": true,
+          "options": {
+            "Color": "PÚRPURA",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57888526139779",
+          "label": "PÚRPURA / TRAJE COMPLETO",
+          "price_cents": 12900,
+          "available": true,
+          "options": {
+            "Color": "PÚRPURA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        }
+      ]
+    },
+    {
+      "id": "teodora",
+      "title": "TEODORA",
+      "description": "Teodora - La elegancia y distinción de una emperatriz con diseño exclusivo. Conjunto 2 piezas. Vestido con capa y gola. El vestido romano Teodora es una pieza de gran impacto visual, diseñada para transmitir la elegancia y presencia de toda una emperatriz romana. Confeccionado en gasa de alta calidad, con vestido y capa en una sola pieza, destaca por su extraordinaria fluidez y ligereza. Sus más de 15 metros de tejido premium, envuelve el cuerpo en un vaivén majestuoso, transformando cada paso en un despliegue de sofisticación. Su silueta limpia y estilizada, junto con los detalles decorativos de inspiración romana, refuerzan una estética imperial y atemporal. Pone el broche culmen a este espectacular diseño su evocadora gola que decora el cuello aportando estructura con una elegancia sublime. Disponible en 4 colores, el vestido Teodora es ideal para quienes buscan una prenda exclusiva, con carácter y una fuerte inspiración en la elegancia de la Roma imperial. Un vestido romano único, ligero y espectacular, perfecto para recreación histórica, eventos temáticos y espectáculos.",
+      "image": "static/img/productos/teodora.jpg",
+      "options": [
+        {
+          "name": "Color",
+          "values": [
+            "GRIS",
+            "TIERRA",
+            "MARRÓN",
+            "PÚRPURA"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "57806791967107",
+          "label": "GRIS",
+          "price_cents": 24900,
+          "available": true,
+          "options": {
+            "Color": "GRIS"
+          }
+        },
+        {
+          "id": "57806792032643",
+          "label": "TIERRA",
+          "price_cents": 24900,
+          "available": true,
+          "options": {
+            "Color": "TIERRA"
+          }
+        },
+        {
+          "id": "57810426265987",
+          "label": "MARRÓN",
+          "price_cents": 24900,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN"
+          }
+        },
+        {
+          "id": "57810426298755",
+          "label": "PÚRPURA",
+          "price_cents": 24900,
+          "available": true,
+          "options": {
+            "Color": "PÚRPURA"
+          }
+        }
+      ]
+    },
+    {
+      "id": "livia",
+      "title": "LIVIA",
+      "description": "Traje romano Livia - Elegancia arquitectónica de inspiración Romana Vestido en gasa doble con cíngulo (cinturón). El traje romano Livia es una pieza femenina, ligera y sofisticada, ideal para quienes buscan un vestuario romano elegante y con movimiento. Confeccionado en gasa doble, ofrece una caída fluida y un acabado delicado que realza la silueta con naturalidad. Su diseño combina tres colores, aportando contraste y un estilo refinado inspirado en la estética de la antigua Roma. Incorpora ojales en la zona central que permiten ajustar a la silueta el vestido mediante un cíngulo o cordón de inspiración romana incluido. Disponible en 6 combinaciones de colores, permite elegir la combinación que mejor se adapta a cada estilo o evento. Un vestido romano versátil, cómodo y con gran presencia visual, perfecto para recreación histórica, eventos temáticos y espectáculos.",
+      "image": "static/img/productos/livia.jpg",
+      "options": [
+        {
+          "name": "Color",
+          "values": [
+            "AZUL - MARINO",
+            "PÚRPURA",
+            "VERDE",
+            "GRIS",
+            "Mostaza",
+            "CELESTE Y AZUL"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "57806594474371",
+          "label": "AZUL - MARINO",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "AZUL - MARINO"
+          }
+        },
+        {
+          "id": "57806594441603",
+          "label": "PÚRPURA",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "PÚRPURA"
+          }
+        },
+        {
+          "id": "57806594507139",
+          "label": "VERDE",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "VERDE"
+          }
+        },
+        {
+          "id": "57806594539907",
+          "label": "GRIS",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "GRIS"
+          }
+        },
+        {
+          "id": "57806594572675",
+          "label": "Mostaza",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "Mostaza"
+          }
+        },
+        {
+          "id": "57806594605443",
+          "label": "CELESTE Y AZUL",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "CELESTE Y AZUL"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tunica-basica",
+      "title": "TUNICA BÁSICA",
+      "description": "Túnica básica romana. La túnica básica romana es la pieza fundamental del guardarropa de la antigua Roma, una prenda cómoda y versátil, con estampación de grecas inspiradas en la indumentaria cotidiana del pueblo romano. Incluye cíngulo (o cinturón de cuerda) como complemento típico y funcional de la época, con el que podrás ajustar la penda y definir tu silueta. Confeccionada en lino ecológico. Disponible en varios colores. Ya sea para eventos de recreación histórica o fiestas temáticas romanas, con esta prenda destacarás por su sencillez estructural y su elegancia natural.",
+      "image": "static/img/productos/tunica-basica.jpg",
+      "options": [
+        {
+          "name": "Color",
+          "values": [
+            "PISTACHO",
+            "MARRÓN",
+            "MARRÓN OSCURO",
+            "VERDE AGUA",
+            "AZUL - MARINO",
+            "VINO TINTO",
+            "BURDEOS",
+            "CELESTE"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "57987056435587",
+          "label": "PISTACHO",
+          "price_cents": 4000,
+          "available": true,
+          "options": {
+            "Color": "PISTACHO"
+          }
+        },
+        {
+          "id": "57987056468355",
+          "label": "MARRÓN",
+          "price_cents": 4000,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN"
+          }
+        },
+        {
+          "id": "57987056501123",
+          "label": "MARRÓN OSCURO",
+          "price_cents": 4000,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN OSCURO"
+          }
+        },
+        {
+          "id": "57987056533891",
+          "label": "VERDE AGUA",
+          "price_cents": 4000,
+          "available": true,
+          "options": {
+            "Color": "VERDE AGUA"
+          }
+        },
+        {
+          "id": "57987056566659",
+          "label": "AZUL - MARINO",
+          "price_cents": 4000,
+          "available": true,
+          "options": {
+            "Color": "AZUL - MARINO"
+          }
+        },
+        {
+          "id": "57987056599427",
+          "label": "VINO TINTO",
+          "price_cents": 4000,
+          "available": true,
+          "options": {
+            "Color": "VINO TINTO"
+          }
+        },
+        {
+          "id": "57971731825027",
+          "label": "BURDEOS",
+          "price_cents": 4000,
+          "available": true,
+          "options": {
+            "Color": "BURDEOS"
+          }
+        },
+        {
+          "id": "57971731792259",
+          "label": "CELESTE",
+          "price_cents": 4000,
+          "available": true,
+          "options": {
+            "Color": "CELESTE"
+          }
+        }
+      ]
+    },
+    {
+      "id": "juno",
+      "title": "JUNO",
+      "description": "Traje romano Juno Conjunto de 2 piezas: Túnica con cinturón y palla (Capa) Junio es un conjunto diseñado para evocar la tradición, belleza imponente y el aura de divinidad de la reina de los dioses. La Túnica de estructura y evocación romana, está confeccionada en lino, de corte recto tradicional, largo hasta los tobillos y mangas cómodas ideal para eventos de larga duración, La Capa (Palla) diseñada en gasa, parece flotar sobre la figura aportando ligereza y movimiento y un elegante contraste de tejidos y colores. Tanto la túnica como la capa han sido enriquecidas con grecas de inspiración arqueológica, tejidas con precisión para honrar la estética de la Roma clásica. Disponible en varios colores. El conjunto Juno es una pieza exquisita diseñada para quienes buscan autenticidad, comodidad y sofisticación de una diosa en sus eventos recreacionistas.",
+      "image": "static/img/productos/juno.jpg",
+      "options": [
+        {
+          "name": "Color",
+          "values": [
+            "AMARILLO",
+            "MARRÓN"
+          ]
+        },
+        {
+          "name": "TIPO",
+          "values": [
+            "VESTIDO",
+            "CAPA",
+            "TRAJE COMPLETO"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "57984491815299",
+          "label": "AMARILLO / VESTIDO",
+          "price_cents": 6500,
+          "available": true,
+          "options": {
+            "Color": "AMARILLO",
+            "TIPO": "VESTIDO"
+          }
+        },
+        {
+          "id": "57984552436099",
+          "label": "AMARILLO / CAPA",
+          "price_cents": 3500,
+          "available": true,
+          "options": {
+            "Color": "AMARILLO",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57984552468867",
+          "label": "AMARILLO / TRAJE COMPLETO",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "AMARILLO",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57984547094915",
+          "label": "MARRÓN / VESTIDO",
+          "price_cents": 6500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN",
+            "TIPO": "VESTIDO"
+          }
+        },
+        {
+          "id": "57984552501635",
+          "label": "MARRÓN / CAPA",
+          "price_cents": 3500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57984552534403",
+          "label": "MARRÓN / TRAJE COMPLETO",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        }
+      ]
+    },
+    {
+      "id": "livia-copia",
+      "title": "PROSERPINA",
+      "description": "Proserpina - traje romano con diseño ligero y distinguido. Conjunto de 2 piezas: vestido y velo, elegible en varios colores. Tejido: gasa doble capa El traje romano Proserpina es una pieza femenina, ligera y sofisticada, ideal para quienes buscan un vestuario romano elegante y con movimiento. El vestido , confeccionado en gasa doble capa, ofrece una caída fluida y un acabado delicado que realza la silueta con naturalidad. Su diseño combina tres colores, aportando un sutil contraste y un estilo refinado inspirado en la estética de la antigua Roma. Incorpora ojales en la cintura que permiten ajustar la túnica mediante cordón (o cíngulo) incluido adaptándose cómodamente al cuerpo y elevando la estética histórica a un plano de sofisticación. Se completa con un velo ligero de gasa cuya transparencia juega sutilmente con la luz otorgando un elegante brillo y movimiento al conjunto. Disponible en 4 colores, permite elegir la combinación que mejor se adapta a cada estilo o evento. Un vestido romano versátil, cómodo y con gran presencia visual, perfecto para recreación histórica, eventos temáticos y espectáculos.",
+      "image": "static/img/productos/livia-copia.jpg",
+      "options": [
+        {
+          "name": "Color",
+          "values": [
+            "GRIS",
+            "MARRÓN",
+            "TIERRA",
+            "CALDERA"
+          ]
+        },
+        {
+          "name": "TIPO",
+          "values": [
+            "VESTIDO",
+            "VELO",
+            "TRAJE COMPLETO"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "57810459787651",
+          "label": "GRIS / VESTIDO",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "GRIS",
+            "TIPO": "VESTIDO"
+          }
+        },
+        {
+          "id": "57836753387907",
+          "label": "GRIS / VELO",
+          "price_cents": 3000,
+          "available": true,
+          "options": {
+            "Color": "GRIS",
+            "TIPO": "VELO"
+          }
+        },
+        {
+          "id": "57836753420675",
+          "label": "GRIS / TRAJE COMPLETO",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "GRIS",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57810574115203",
+          "label": "MARRÓN / VESTIDO",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN",
+            "TIPO": "VESTIDO"
+          }
+        },
+        {
+          "id": "57836753453443",
+          "label": "MARRÓN / VELO",
+          "price_cents": 3000,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN",
+            "TIPO": "VELO"
+          }
+        },
+        {
+          "id": "57836753486211",
+          "label": "MARRÓN / TRAJE COMPLETO",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57810574147971",
+          "label": "TIERRA / VESTIDO",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "TIERRA",
+            "TIPO": "VESTIDO"
+          }
+        },
+        {
+          "id": "57836753518979",
+          "label": "TIERRA / VELO",
+          "price_cents": 3000,
+          "available": true,
+          "options": {
+            "Color": "TIERRA",
+            "TIPO": "VELO"
+          }
+        },
+        {
+          "id": "57836753551747",
+          "label": "TIERRA / TRAJE COMPLETO",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "TIERRA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57810574180739",
+          "label": "CALDERA / VESTIDO",
+          "price_cents": 7500,
+          "available": true,
+          "options": {
+            "Color": "CALDERA",
+            "TIPO": "VESTIDO"
+          }
+        },
+        {
+          "id": "57836753584515",
+          "label": "CALDERA / VELO",
+          "price_cents": 3000,
+          "available": true,
+          "options": {
+            "Color": "CALDERA",
+            "TIPO": "VELO"
+          }
+        },
+        {
+          "id": "57836753617283",
+          "label": "CALDERA / TRAJE COMPLETO",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "CALDERA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mercurio",
+      "title": "MERCURIO",
+      "description": "Conviértete en el mensajero de los dioses con nuestro exclusivo Traje Romano \"Mercurio\". Un conjunto diseñado para hombres que buscan una estética clásica pero imponente, combinando la tradición del Imperio con la mística del Olimpo. El conjunto se compone de 2 piezas: Una Túnica confeccionada en tejido ligero de lino, enmarcada en hombros y delantero con una elegante greca de inspiración romana, diseñada con un corte cómodo que permite total libertad de movimiento, acompañada por un cíngulo para ajustarla al talle. Completa nuestro traje Mercurio una capa confeccionada en gasa, diseñada para aportar volumen y presencia al caminar, componiendo la silueta aristocrática característica de los senadores y deidades romanas. Disponible en 4 combinaciones de colores. Perfecto para recreaciones romanas de alto nivel. ¡Hazte con el tuyo y conquista el Imperio!",
+      "image": "static/img/productos/mercurio.jpg",
+      "options": [
+        {
+          "name": "Color",
+          "values": [
+            "VERDE OSCURO",
+            "MARRÓN OSCURO",
+            "PISTACHO",
+            "MARRÓN CLARO"
+          ]
+        },
+        {
+          "name": "TIPO",
+          "values": [
+            "TÚNICA Y CÍNGULO",
+            "CAPA",
+            "TRAJE COMPLETO"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "57983258689923",
+          "label": "VERDE OSCURO / TÚNICA Y CÍNGULO",
+          "price_cents": 6500,
+          "available": true,
+          "options": {
+            "Color": "VERDE OSCURO",
+            "TIPO": "TÚNICA Y CÍNGULO"
+          }
+        },
+        {
+          "id": "57983259836803",
+          "label": "VERDE OSCURO / CAPA",
+          "price_cents": 3500,
+          "available": true,
+          "options": {
+            "Color": "VERDE OSCURO",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57983259869571",
+          "label": "VERDE OSCURO / TRAJE COMPLETO",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "VERDE OSCURO",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57983258722691",
+          "label": "MARRÓN OSCURO / TÚNICA Y CÍNGULO",
+          "price_cents": 6500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN OSCURO",
+            "TIPO": "TÚNICA Y CÍNGULO"
+          }
+        },
+        {
+          "id": "57983259902339",
+          "label": "MARRÓN OSCURO / CAPA",
+          "price_cents": 3500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN OSCURO",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57983259935107",
+          "label": "MARRÓN OSCURO / TRAJE COMPLETO",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN OSCURO",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57983258755459",
+          "label": "PISTACHO / TÚNICA Y CÍNGULO",
+          "price_cents": 6500,
+          "available": true,
+          "options": {
+            "Color": "PISTACHO",
+            "TIPO": "TÚNICA Y CÍNGULO"
+          }
+        },
+        {
+          "id": "57983259967875",
+          "label": "PISTACHO / CAPA",
+          "price_cents": 3500,
+          "available": true,
+          "options": {
+            "Color": "PISTACHO",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57983260000643",
+          "label": "PISTACHO / TRAJE COMPLETO",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "PISTACHO",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57983258788227",
+          "label": "MARRÓN CLARO / TÚNICA Y CÍNGULO",
+          "price_cents": 6500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN CLARO",
+            "TIPO": "TÚNICA Y CÍNGULO"
+          }
+        },
+        {
+          "id": "57983260033411",
+          "label": "MARRÓN CLARO / CAPA",
+          "price_cents": 3500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN CLARO",
+            "TIPO": "CAPA"
+          }
+        },
+        {
+          "id": "57983260066179",
+          "label": "MARRÓN CLARO / TRAJE COMPLETO",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "MARRÓN CLARO",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        }
+      ]
+    },
+    {
+      "id": "octavia-con-velo",
+      "title": "OCTAVIA V",
+      "description": "Traje romano Octavia - Elegancia femenina en lino y gasa. Conjunto de 3 piezas. Vestido, cinturón y velo. El traje romano Octavia es una propuesta sofisticada y femenina, diseñada para destacar con elegancia y autenticidad. Confeccionado en lino de alta calidad, ofrece una caída natural, frescura y comodidad, ideal para un vestuario romano cuidado y con estilo. El conjunto está compuesto por un vestido escotado con manga fruncida y ceñido en la cintura que realza la silueta, acompañado de un cinturón con grecas decorativas de inspiración romana que aporta carácter y definición. Se complementa con un velo ligero de gasa con greca romana que juega sutilmente con la luz otorgando movimiento y sofisticación al conjunto. Disponible en 6 combinaciones de colores, el traje Octavia permite adaptarse a diferentes estilos, manteniendo siempre una estética clásica y refinada. Un vestido romano versátil, elegante y atemporal, perfecto para recreación histórica, eventos temáticos y espectáculos.",
+      "image": "static/img/productos/octavia-con-velo.jpg",
+      "options": [
+        {
+          "name": "Color",
+          "values": [
+            "BEIGE - LILA",
+            "VERDE - BURDEO",
+            "ROSA - CELESTE",
+            "MARRON - ROSA EMPOLVADO",
+            "VERDE - MENTA",
+            "BORGOÑA - ROSA"
+          ]
+        },
+        {
+          "name": "TIPO",
+          "values": [
+            "VESTIDO CON CINTURÓN",
+            "VELO",
+            "TRAJE COMPLETO"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "57832458912131",
+          "label": "BEIGE - LILA / VESTIDO CON CINTURÓN",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "BEIGE - LILA",
+            "TIPO": "VESTIDO CON CINTURÓN"
+          }
+        },
+        {
+          "id": "57837213122947",
+          "label": "BEIGE - LILA / VELO",
+          "price_cents": 3000,
+          "available": true,
+          "options": {
+            "Color": "BEIGE - LILA",
+            "TIPO": "VELO"
+          }
+        },
+        {
+          "id": "57837213155715",
+          "label": "BEIGE - LILA / TRAJE COMPLETO",
+          "price_cents": 11500,
+          "available": true,
+          "options": {
+            "Color": "BEIGE - LILA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57832458813827",
+          "label": "VERDE - BURDEO / VESTIDO CON CINTURÓN",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "VERDE - BURDEO",
+            "TIPO": "VESTIDO CON CINTURÓN"
+          }
+        },
+        {
+          "id": "57837212926339",
+          "label": "VERDE - BURDEO / VELO",
+          "price_cents": 3000,
+          "available": true,
+          "options": {
+            "Color": "VERDE - BURDEO",
+            "TIPO": "VELO"
+          }
+        },
+        {
+          "id": "57837212959107",
+          "label": "VERDE - BURDEO / TRAJE COMPLETO",
+          "price_cents": 11500,
+          "available": true,
+          "options": {
+            "Color": "VERDE - BURDEO",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57832458846595",
+          "label": "ROSA - CELESTE / VESTIDO CON CINTURÓN",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "ROSA - CELESTE",
+            "TIPO": "VESTIDO CON CINTURÓN"
+          }
+        },
+        {
+          "id": "57837212991875",
+          "label": "ROSA - CELESTE / VELO",
+          "price_cents": 2800,
+          "available": true,
+          "options": {
+            "Color": "ROSA - CELESTE",
+            "TIPO": "VELO"
+          }
+        },
+        {
+          "id": "57837213024643",
+          "label": "ROSA - CELESTE / TRAJE COMPLETO",
+          "price_cents": 11500,
+          "available": true,
+          "options": {
+            "Color": "ROSA - CELESTE",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57832458879363",
+          "label": "MARRON - ROSA EMPOLVADO / VESTIDO CON CINTURÓN",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "MARRON - ROSA EMPOLVADO",
+            "TIPO": "VESTIDO CON CINTURÓN"
+          }
+        },
+        {
+          "id": "57837213057411",
+          "label": "MARRON - ROSA EMPOLVADO / VELO",
+          "price_cents": 3000,
+          "available": true,
+          "options": {
+            "Color": "MARRON - ROSA EMPOLVADO",
+            "TIPO": "VELO"
+          }
+        },
+        {
+          "id": "57837213090179",
+          "label": "MARRON - ROSA EMPOLVADO / TRAJE COMPLETO",
+          "price_cents": 11500,
+          "available": true,
+          "options": {
+            "Color": "MARRON - ROSA EMPOLVADO",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57832458944899",
+          "label": "VERDE - MENTA / VESTIDO CON CINTURÓN",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "VERDE - MENTA",
+            "TIPO": "VESTIDO CON CINTURÓN"
+          }
+        },
+        {
+          "id": "57837213188483",
+          "label": "VERDE - MENTA / VELO",
+          "price_cents": 3000,
+          "available": true,
+          "options": {
+            "Color": "VERDE - MENTA",
+            "TIPO": "VELO"
+          }
+        },
+        {
+          "id": "57837213221251",
+          "label": "VERDE - MENTA / TRAJE COMPLETO",
+          "price_cents": 11500,
+          "available": true,
+          "options": {
+            "Color": "VERDE - MENTA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        },
+        {
+          "id": "57832458977667",
+          "label": "BORGOÑA - ROSA / VESTIDO CON CINTURÓN",
+          "price_cents": 9500,
+          "available": true,
+          "options": {
+            "Color": "BORGOÑA - ROSA",
+            "TIPO": "VESTIDO CON CINTURÓN"
+          }
+        },
+        {
+          "id": "57837213254019",
+          "label": "BORGOÑA - ROSA / VELO",
+          "price_cents": 3000,
+          "available": true,
+          "options": {
+            "Color": "BORGOÑA - ROSA",
+            "TIPO": "VELO"
+          }
+        },
+        {
+          "id": "57837213286787",
+          "label": "BORGOÑA - ROSA / TRAJE COMPLETO",
+          "price_cents": 11500,
+          "available": true,
+          "options": {
+            "Color": "BORGOÑA - ROSA",
+            "TIPO": "TRAJE COMPLETO"
+          }
+        }
+      ]
+    }
+  ]
+}

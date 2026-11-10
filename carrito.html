@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <script>
+(function(w,d,s,l,i){
+  w[l]=w[l]||[];
+  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+  var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),
+      dl=l!='dataLayer' ? '&l='+l : '';
+  j.async=true;
+  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+  f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5R88CDH3');
+</script>
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zbggklgk77");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | WEARK</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="fav.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css?v=20261110-colores">
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5R88CDH3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<header class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="logo" aria-label="WEARK">
+            <img src="static/logo_base.png" alt="WEARK" class="logo-img" width="180" height="48">
+        </a>
+        <a class="nav-cart" href="carrito.html">Carrito <span id="cart-count">0</span></a>
+        <button class="menu-toggle" aria-label="Abrir menú">Menú</button>
+        <ul class="nav-links">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#articulos">Artículos</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+    </div>
+</header>
+<main class="page-shell">
+    <div class="container">
+        <h1>Tu pedido</h1>
+        <div class="cart-layout" id="cart-root">
+            <div class="cart-panel">
+                <p id="cart-empty">Tu carrito está vacío. <a href="index.html#articulos">Ver artículos</a></p>
+                <div id="cart-lines"></div>
+            </div>
+            <form id="checkout-form" class="checkout-form" hidden>
+                <p>Envío solo a España. El pago se hace en la página segura de MONEI, con tarjeta, PayPal o Bizum.</p>
+                <label>Nombre y apellidos
+                    <input name="nombre" autocomplete="name" required maxlength="80">
+                </label>
+                <label>Email
+                    <input name="email" type="email" autocomplete="email" required maxlength="120">
+                </label>
+                <label>Teléfono
+                    <input name="telefono" type="tel" autocomplete="tel" required maxlength="20">
+                </label>
+                <label>Dirección
+                    <input name="direccion" autocomplete="street-address" required maxlength="140">
+                </label>
+                <label>Código postal
+                    <input name="cp" inputmode="numeric" autocomplete="postal-code" required maxlength="5" pattern="[0-9]{5}">
+                </label>
+                <label>Ciudad
+                    <input name="ciudad" autocomplete="address-level2" required maxlength="60">
+                </label>
+                <label>Provincia
+                    <input name="provincia" autocomplete="address-level1" required maxlength="40">
+                </label>
+                <label>Notas del pedido
+                    <textarea name="notas" maxlength="500" rows="3"></textarea>
+                </label>
+                <div class="hp-field" aria-hidden="true">
+                    <label>Empresa <input name="empresa" tabindex="-1" autocomplete="off"></label>
+                </div>
+                <label class="check-line">
+                    <input type="checkbox" required>
+                    <span>Acepto las condiciones: envío 9 € (gratis desde 60 €), preparación de 2 a 15 días laborables y 14 días de desistimiento, salvo prendas personalizadas.</span>
+                </label>
+                <div id="cart-totals" class="totals"></div>
+                <p id="checkout-error" class="form-error" role="alert"></p>
+                <button class="btn btn-primary" type="submit">Pagar con MONEI</button>
+            </form>
+        </div>
+    </div>
+</main>
+<script src="static/js/shop.js?v=20261110-colores" defer></script>
+<script src="static/js/main.js?v=20261110-monei" defer></script>
+</body>
+</html>
